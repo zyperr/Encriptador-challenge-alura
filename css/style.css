@@ -1,0 +1,163 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+body{
+    font-size: 20px;
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin:50px 0 50px 80px;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: #0A3871;
+    border-bottom: 3px solid #041b37 ;
+}
+header a{
+    text-decoration: none;
+    color: #D8DFE8;
+    margin: 0 30px 0 30px;
+}
+header a:hover{
+    transition: 1s;
+    color: #3f8af4;
+    text-decoration: underline;
+}
+
+textarea{
+    box-shadow: 1px 5px 2px 1px #041b37;
+    color: #0A3871;
+}
+textarea::placeholder{
+    color: #0A3871;
+}
+.input-texto{
+    font-size: 1.5em;
+    border: none;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+.botones{
+    text-align: center;
+    margin: 20px;
+}
+.botones p{
+    margin-bottom: 10px;
+}
+.encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: 2px solid #0A3871;
+    width: 150px;
+    height: 50px;
+    border-radius: 24px;
+}
+.encriptar:hover{
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    transition: 1s;
+}
+.desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    width: 150px;
+    height: 50px;
+    border-radius: 24px;
+}
+.desencriptar:hover{
+    background-color: #0A3871;
+    color: #E5E5E5;
+    transition: 1s;
+}
+.mensaje{
+    border: none;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url(../svg/Muñeco.svg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #FFFFFF;
+}
+.copiar{
+    margin-top: 47px;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    width: 150px;
+    height: 50px;
+    border-radius: 24px;
+}
+.copiar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copiar:hover{
+    background-color: #0A3871;
+    color: #E5E5E5;
+    transition: 1s;
+}
+button{
+    margin: 0 auto;
+    cursor: pointer;
+}
+.Info{
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+    text-align: center;
+}
+
+.Info p:first-child{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.Info p:last-child{
+    font-size: 15px;
+}
+
+footer{
+    color: #E5E5E5;
+    font-size: 30px;
+    height: 220px;
+    background: rgb(10,56,113);
+    background: linear-gradient (95deg, rgba(10,56,113,1), rgba(10,56,113,1) , rgba(10,56,113,1) , rgba(229,229,229,1));
+    border-top: 3px solid #041b37 ;
+}
+
+footer svg{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+footer svg:last-child{
+    margin-right: 30px;
+    float: right;
+}
+.redes{
+    text-align: center;
+}
+.redes p{
+    margin-bottom:  10px;
+    text-align: center ;
+}
+.redes i{
+    color: #E5E5E5;
+}
+.redes i:first-child:hover{
+    transition: 1s;
+    color: #3f8af4;
+}
