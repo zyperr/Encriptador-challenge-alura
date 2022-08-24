@@ -217,9 +217,6 @@ footer svg:last-child{
 }
 @media screen and (max-width:1025px){
 
-    body{
-        display: inline-block;
-    }
     header{
         background-color: #0A3871;
     }
@@ -233,7 +230,7 @@ footer svg:last-child{
     .Info{
         position: relative;
         bottom: 120px;
-        left: 250px;
+        left: 0px;
         text-align: center;
         width: 250px;
     }
