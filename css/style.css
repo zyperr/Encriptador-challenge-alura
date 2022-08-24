@@ -98,7 +98,6 @@ textarea::placeholder{
     background-color: #FFFFFF;
 }
 .copiar{
-    margin-top: 47px;
     background-color: #E5E5E5;
     color: #0A3871;
     border: 2px solid #0A3871;
@@ -110,7 +109,6 @@ textarea::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
 }
 .copiar:hover{
     background-color: #0A3871;
@@ -135,7 +133,9 @@ button{
 .Info p:last-child{
     font-size: 15px;
 }
-
+.Info p{
+    visibility: visible;
+}
 footer{
     color: #E5E5E5;
     font-size: 30px;
