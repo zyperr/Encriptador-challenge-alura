@@ -25,6 +25,7 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado;
     mensaje.style.backgroundImage = "none";
     inputTexto.value = "";
+    document.getElementsByClassName(".copiar").style.display="initial";
     document.getElementById("ningunTexto").style.display ="none";
     document.getElementById("mensajeIngresarTexto").style.display="none";
 }
@@ -44,6 +45,7 @@ function btnDesencriptar(){
     const textoDesencriptado = desencriptar(inputTexto.value)
     mensaje.value = textoDesencriptado;
     inputTexto.value = "";
+    document.getElementsByClassName(".copiar").style.display="initial";
     document.getElementById("ningunTexto").style.display ="none";
     document.getElementById("mensajeIngresarTexto").style.display="none";
 }

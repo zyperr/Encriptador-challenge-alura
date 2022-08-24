@@ -4,6 +4,9 @@
 body{
     font-size: 20px;
     background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 main{
     display: flex;
@@ -38,6 +41,7 @@ textarea::placeholder{
     color: #0A3871;
 }
 .input-texto{
+    text-align: center;
     font-size: 1.5em;
     border: none;
     width: 500px;
@@ -79,6 +83,7 @@ textarea::placeholder{
     transition: 1s;
 }
 .mensaje{
+    text-align: center;
     border: none;
     font-size: 1.5em;
     position: relative;
@@ -97,7 +102,7 @@ textarea::placeholder{
     background-color: #E5E5E5;
     color: #0A3871;
     border: 2px solid #0A3871;
-    width: 150px;
+    width: 250px;
     height: 50px;
     border-radius: 24px;
 }
@@ -105,6 +110,7 @@ textarea::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 .copiar:hover{
     background-color: #0A3871;
@@ -137,6 +143,7 @@ footer{
     background: rgb(10,56,113);
     background: linear-gradient (95deg, rgba(10,56,113,1), rgba(10,56,113,1) , rgba(10,56,113,1) , rgba(229,229,229,1));
     border-top: 3px solid #041b37 ;
+    margin-top: auto;
 }
 
 footer svg{
@@ -160,4 +167,78 @@ footer svg:last-child{
 .redes i:first-child:hover{
     transition: 1s;
     color: #3f8af4;
+}
+
+/*
+    media query para tablet
+*/
+@media screen and (max-width:768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    .input-texto::placeholder{
+        text-align: center;
+    }
+    .mensaje{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        background-image: none;
+        width: 688;
+        height: auto;
+    }
+    .Info{
+        position: relative;
+        bottom: 55px;
+        left: 5px;
+        text-align: center;
+    }
+    
+    .Info p:first-child{
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .Info p:last-child{
+        font-size: 15px;
+    }
+    .copiar{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1025px){
+
+    body{
+        display: inline-block;
+    }
+    header{
+        background-color: #0A3871;
+    }
+    .input-texto::placeholder{
+        text-align: center;
+    }
+    .mensaje{
+        text-align: center;
+        margin-right: 30px;
+    }
+    .Info{
+        position: relative;
+        bottom: 120px;
+        left: 250px;
+        text-align: center;
+        width: 250px;
+    }
+    .copiar{
+        position: relative;
+        bottom: 30px;
+    }
 }
